@@ -54,9 +54,22 @@
     <!--PDF-->
     <main class="container mt-5" id="projects">
         <div id="pdf-place" class="row">
-            <div class="col-12 mb-12" data-aos="fade-in" data-aos-duration="2000" data-aos-delay=200 data-aos-offset="100">
+            <div class="col-12 mb-12" data-aos="fade-in" data-aos-duration="2000" data-aos-delay=200
+                data-aos-offset="100">
                 <div class="card">
-                    <iframe id="pdfViewer" src="./pdfs/CV-Mykola-Nesterenko.pdf" type="application/pdf" width="100%" height="auto"></iframe>
+                    <div class="card-body mt-0">
+                        <object id="pdfViewer" data="./pdfs/CV-Mykola-Nesterenko.pdf" type="application/pdf"
+                            width="100%" height="auto">
+                            <p class="details-text mb-0">Your web browser doesn't have a PDF plugin.
+                                Instead you can <a href="./pdfs/CV-Mykola-Nesterenko.pdf">click here to download the PDF
+                                    file.</a>
+                            </p>
+                            <p class="details-text">Alternatively you can try to use Google Docs Viewer below:</p>
+                            <object id="pdfViewerAlt"
+                                data="https://docs.google.com/gview?embedded=true&url=https://cybernester.github.io/pdfs/CV-Mykola-Nesterenko.pdf"
+                                width="100%" height="auto"></object>
+                        </object>
+                    </div>
                 </div>
             </div>
         </div> <!--Placeholder for PDF-->
