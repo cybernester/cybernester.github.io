@@ -1,0 +1,67 @@
+/*Navbar*/
+.navbar {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-brand,
+.nav-link {
+    color: rgba(0, 0, 0, 0.55);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: rgba(0, 0, 0, 1);
+}
+
+.active-item {
+    color: rgba(0, 0, 0, 1);
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: rgba(0, 0, 0, 1);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.55)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+
+.navbar-toggler-icon:hover,
+.navbar-toggler-icon:focus {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgb(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/*Cards*/
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-up.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.details-text {
+    text-align: justify;
+    padding: 20px;
+}

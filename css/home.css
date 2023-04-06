@@ -1,0 +1,146 @@
+/*Nabnar*/
+.navbar {
+    margin-top: -59px;
+}
+
+/*Profile*/
+#profilepic {
+    width: 100%;
+    height: 400px;
+    object-fit:cover;
+    margin-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    
+}
+
+#profile {
+    background-color: black;
+    padding-top: 200px;
+    margin-top: -200px;
+}
+
+.profile-card {
+    background-color: black;
+    border-radius: 10px;
+}
+
+.profile-body {
+    padding: 10px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.profile-title {
+    color: rgba(255, 255, 255, .9);
+    text-align: center;
+    font-weight: 400;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.profile-subtitle {
+    color: rgba(255, 255, 255, .7);
+    text-align: center;
+    font-weight: 100;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.profile-text {
+    color: rgba(255, 255, 255, .4);
+    font-weight: 300;
+    text-align: center;
+}
+
+/*Cards*/
+.card-img-top {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card-body {
+    padding: 20px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/*Skills*/
+.skills {
+    padding: 0px;
+}
+
+.skill {
+    display: inline-block;
+    font-weight: 400;
+    color: whitesmoke;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: rgb(59, 59, 59);
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    margin: 2px;
+    margin-top: 4px;
+}
+
+/*Work Experience*/
+.work-text {
+    color: black;
+    text-align: justify;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.work-role {
+    color: rgba(0, 0, 0, .9); 
+    text-align: left; 
+    font-weight: 300;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.work-place {
+    color: rgba(0, 0, 0, .8); 
+    text-align: left; 
+    font-weight: 300;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.work-date {
+    color: rgba(0, 0, 0, .8);
+    text-align: left;
+    font-weight: 100;
+    padding-right: 0px;
+    padding-left: 0px;
+}
