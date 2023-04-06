@@ -27,11 +27,11 @@ fetch(jsonFile)
         if (file.name == (title + ".pdf")) {
             //const fileTitle = file.name.substring(0, file.name.length - 4);
             let txtFile;
-            if (title == "Secure Software Development"){
+            if (title == "Secure Software Development") { //Change as the project descriptions add on
                 txtFile = `${pdfFolder}/${title}.txt`;
-              } else {
+            } else {
                 txtFile = `${pdfFolder}/test.txt`;
-              }
+            }
             //const txtFile = `${pdfFolder}/${title}.txt`;
             //const txtFile = `${pdfFolder}/test.txt`;
             //const fileLink = encodeURIComponent(fileTitle);
@@ -42,8 +42,13 @@ fetch(jsonFile)
                     pdfPlace.innerHTML += `
                         <div class="col-12 mb-12" data-aos="fade-in" data-aos-duration="1000" data-aos-delay=200 data-aos-offset="100">
                             <div class="card">
-                                <p class="details-text mb-1">${cardText}</p>
-                                <iframe id="pdfViewer" src="./pdfs/${title}.pdf" type="application/pdf" width="100%" height="auto"></iframe>
+                                <div class="card-body">
+                                    <p class="details-text mb-0">${cardText}</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a class="btn btn-outline-secondary" href="./pdfs/${encodeURIComponent(title)}.pdf" role="button">Download</a>
+                                    </div>
+                                </div>
+                                <iframe id="pdfViewer" src="./js/pdfjs-3.5.141/web/viewer.html?file=/../pdfs/${encodeURIComponent(title)}.pdf" frameborder="0" width="100%" height="auto"></iframe>
                             </div>
                         </div>
                     `;
@@ -53,13 +58,16 @@ fetch(jsonFile)
                 .catch(error => {
                     console.error(`Error fetching text file for ${file.name}:`, error);
                 });
-                
+
         } else {
             projectTitle.innerText = "Project Not Found, But here is my CV!";
             pdfPlace.innerHTML += `
                 <div class="col-12 mb-12" data-aos="fade-in" data-aos-duration="2000" data-aos-delay=200 data-aos-offset="100">
                     <div class="card">
-                        <iframe id="pdfViewer" src="./pdfs/CV-Mykola-Nesterenko.pdf" type="application/pdf" width="100%" height="auto"></iframe>
+                        <div class="card-body d-flex justify-content-center">
+                            <a class="btn btn-outline-secondary" href="./pdfs/CV-Mykola-Nesterenko.pdf" role="button">Download</a>
+                        </div>
+                        <iframe id="pdfViewer" src="./js/pdfjs-3.5.141/web/viewer.html?file=/../pdfs/CV-Mykola-Nesterenko.pdf" frameborder="0" width="100%" height="auto"></iframe>
                     </div>
                 </div>
             `;

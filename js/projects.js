@@ -8,14 +8,16 @@ fetch(jsonFile)
     const cardPromises = files.map((file, index) => {
       if (file.name.endsWith(".pdf")) {
         const fileTitle = file.name.substring(0, file.name.length - 4);
+
         let txtFile;
-        if (index < 1){
+        if (index < 1) { //Change as the project descriptions add on
           txtFile = `${pdfFolder}/${fileTitle}.txt`;
         } else {
           txtFile = `${pdfFolder}/test.txt`;
         }
+
         const imgFile = `${pdfFolder}/${fileTitle}.jpg`
-        const fileLink = encodeURIComponent(fileTitle);;
+        const fileLink = encodeURIComponent(fileTitle);
 
         return fetch(txtFile)
           .then(response => response.text())
