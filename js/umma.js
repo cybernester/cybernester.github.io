@@ -13,7 +13,7 @@ const pdfWindow = document.getElementById('pdf-window');
 var mobileState = false;
 
 const mobileViewer = `<iframe id="pdfViewer" src="./js/pdfjs-3.5.141/web/viewer.html?file=/../pdfs/UMMA.pdf" frameborder="0" width="100%" height="auto"></iframe>`;
-const desktopViewer = `<embed id="pdfViewer" src="./pds/UMMA.pdf" frameborder="0" width="100%" height="auto" type="application/pdf">`;
+const desktopViewer = `<embed id="pdfViewer" src="./pdfs/UMMA.pdf" frameborder="0" width="100%" height="auto" type="application/pdf">`;
 
 toggleButton.addEventListener('click', function() {
     mobileState = !mobileState;
