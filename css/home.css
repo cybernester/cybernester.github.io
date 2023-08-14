@@ -90,7 +90,11 @@
 
 /*Skills*/
 .skills {
-    padding: 0px;
+    padding: 1px;
+    padding-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .skill {
@@ -144,3 +148,35 @@
     padding-right: 0px;
     padding-left: 0px;
 }
+
+.external-link {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.external-link:hover {
+    color: darkblue;
+    text-decoration: none;
+}
+
+.external-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 25px);
+    height: 2px;
+    background-color: blue;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.external-link:hover::after {
+    background-color: darkblue;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+

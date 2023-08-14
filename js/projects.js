@@ -1,3 +1,14 @@
+
+fetch("./pdfs/Honours Project.txt")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("honours-text").textContent = data;
+  })
+  .catch(error => {
+    console.error("Error fetching text file for Honours Project.txt:", error);
+  });
+
+
 const pdfFolder = "./pdfs";
 const jsonFile = "./pdfs.json";
 
@@ -6,7 +17,7 @@ fetch(jsonFile)
   .then(files => {
     const pdfCardsContainer = document.getElementById("pdf-cards-container");
     const cardPromises = files.map((file, index) => {
-      if (file.name.endsWith(".pdf")) {
+      if (file.name.endsWith(".pdf") && file.name.substring(0, file.name.length - 4) != "Honours Project") {
         const fileTitle = file.name.substring(0, file.name.length - 4);
 
         let txtFile;

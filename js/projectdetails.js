@@ -27,7 +27,7 @@ fetch(jsonFile)
         if (file.name == (title + ".pdf")) {
             //const fileTitle = file.name.substring(0, file.name.length - 4);
             let txtFile;
-            if (title == "Secure Software Development") { //Change as the project descriptions add on
+            if (title == "Secure Software Development" || title == "Honours Project") { //Change as the project descriptions add on
                 txtFile = `${pdfFolder}/${title}.txt`;
             } else {
                 txtFile = `${pdfFolder}/test.txt`;
